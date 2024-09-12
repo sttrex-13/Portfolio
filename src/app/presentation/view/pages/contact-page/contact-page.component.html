@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="container m-3">
+        <div class="row gap-4">
+            <div class="box col">
+                <div class="px-3 pb-5">
+                    <img class="pt-5" src="assets/icons/mdi_email-edit-outline.svg" alt="mdi_email-edit-outline">
+                    <h1 class="bg pt-3">Get in touch</h1>
+                    <p class="bg py-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum has been
+                        the industry's standard dummy text</p>
+                    <div class="bg send box p-3" (click)="sendEmail()">
+                        <h3>Send me an email</h3>
+                        <p>sutee.dev&#64;gmail.com</p>
+                    </div>
+                    <div class="bg send box p-3 mt-3" (click)="callPhoneNumber()">
+                        <h3>Give me a call</h3>
+                        <p>+66 933 541 693</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fit box col">
+                <div class="flex p-4">
+                    <input class="mt-5" placeholder="Full Name" [(ngModel)]="fullName" />
+                    <input placeholder="Email address" [(ngModel)]="email" />
+                    <input placeholder="Phone number" [(ngModel)]="phone" />
+                    <textarea placeholder="Message..." [(ngModel)]="message"></textarea>
+                    <div class="bg box send p-2 w-25 text-center" (click)="sendEmail()">Send</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

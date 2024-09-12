@@ -1,0 +1,167 @@
+.bg{
+    background: linear-gradient(90deg, #ff8473, #bebebe);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: movingBackground 9s ease infinite;
+}
+
+@keyframes movingBackground {
+    0% {
+        background-position: 0% 99%
+    }
+
+    50% {
+        background-position: 100% 2%
+    }
+
+    100% {
+        background-position: 0% 99%
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 20%;
+}
+
+.box {
+    border-radius: 20px;
+    background: #E0E5EC;
+    box-shadow: -5px 5px 10px 0px rgba(202, 206, 212, 0.20), 5px -5px 10px 0px rgba(202, 206, 212, 0.20), -5px -5px 10px 0px rgba(246, 252, 255, 0.90), 5px 5px 13px 0px rgba(202, 206, 212, 0.90);
+}
+
+.inner-box {
+    border-radius: 20px;
+    background: #E0E5EC;
+    box-shadow: -4px 4px 8px 0px rgba(199, 204, 210, 0.20) inset, 4px -4px 8px 0px rgba(199, 204, 210, 0.20) inset, -4px -4px 8px 0px rgba(249, 254, 255, 0.90) inset, 4px 4px 10px 0px rgba(199, 204, 210, 0.90) inset;
+    color: rgba(144, 144, 144, 0.90);
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding: 10px 20px;
+
+}
+
+.btn {
+    padding: 10%;
+
+}
+
+.btn-div:hover {
+    background: #E0E5EC;
+    box-shadow: -4px 4px 8px 0px rgba(199, 204, 210, 0.20) inset, 4px -4px 8px 0px rgba(199, 204, 210, 0.20) inset, -4px -4px 8px 0px rgba(249, 254, 255, 0.90) inset, 4px 4px 10px 0px rgba(199, 204, 210, 0.90) inset;
+}
+
+span:hover {
+    color: #FF8473;
+    font-weight: 800;
+    transition: 0.5s;
+}
+
+.left-space {
+    margin-left: 5%;
+}
+
+.right-space {
+    padding-right: 10%;
+}
+
+.highlight {
+    color: #FF8473;
+
+}
+
+.hand {
+    animation: wiggle 3s linear infinite;
+}
+
+h2 {
+    color: #FF8473;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+h3 {
+    color: #FF8473;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+p {
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: justify;
+    text-justify: inter-word;
+    color: rgba(144, 144, 144, 0.90);
+}
+
+@media screen and (max-width: 1500px) {
+    .right-space {
+        padding: 0;
+    }
+
+    .inner-box {
+        font-size: small;
+        padding: 5px 10px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+    
+    p{
+        font-size: small;
+    }
+}
+
+
+
+
+@keyframes wiggle {
+
+    0%,
+    7% {
+        transform: rotateZ(0);
+    }
+
+    15% {
+        transform: rotateZ(-15deg);
+    }
+
+    20% {
+        transform: rotateZ(10deg);
+    }
+
+    25% {
+        transform: rotateZ(-10deg);
+    }
+
+    30% {
+        transform: rotateZ(6deg);
+    }
+
+    35% {
+        transform: rotateZ(-4deg);
+    }
+
+    40%,
+    100% {
+        transform: rotateZ(0);
+    }
+}
