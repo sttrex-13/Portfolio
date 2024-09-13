@@ -26,8 +26,8 @@ jobs:
 
       # Step 4: Build the Angular app
       - name: Build Angular app
-        run: npm run build --output-path=dist/browser --base-href "/st-portfolio/"
-
+        run: npm run build -- --output-path=dist/browser --base-href="/st-portfolio/"
+        
       # Step 5: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
