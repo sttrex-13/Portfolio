@@ -26,8 +26,8 @@ jobs:
 
       # Step 4: Build the Angular app for production
       - name: Build Angular app
-        run: npm run build --prod
+        run: npm run build
 
       # Step 5: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
-        run: npx angular-cli-ghpages --dir=dist/st-portfolio
+        run: npx angular-cli-ghpages --dir=dist/browser
